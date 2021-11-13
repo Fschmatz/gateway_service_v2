@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: usuario_service
+          uri: http://localhost:9091/
+          predicates:
+            - Path=/usuario/**
+        - id: evento_service
+          uri: http://localhost:9092/
+          predicates:
+            - Path=/evento/**
