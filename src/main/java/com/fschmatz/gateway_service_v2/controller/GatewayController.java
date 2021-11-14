@@ -17,11 +17,6 @@ public class GatewayController {
         return "home";
     }
 
-    @GetMapping("/homeTeste")
-    public String homePageTeste() {
-        return "homeTeste";
-    }
-
     @GetMapping("/error")
     public String error() {
         return "error";
