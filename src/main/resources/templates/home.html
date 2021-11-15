@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Olá</title>
+    <title>Home Gateway</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -28,7 +28,7 @@
             margin: 20px;
         }
 
-        .btn#btUsuario {
+        .btn#btUsuario{
             background-color: #3780bb;
         }
 
@@ -36,7 +36,7 @@
             background-color: #e3753f;
         }
         .btn#btCriarConta {
-            background-color: #7d4cc7;
+            background-color: #3780bb;
         }
     </style>
 </head>
@@ -55,6 +55,11 @@
             </p>
 
             <p>
+                <a href="/signup" id="btCriarConta" th:href="@{http://localhost:9090/usuario/criarConta}"
+                   class="btn btn-large btn-success">CRIAR CONTA</a>
+            </p>
+
+            <p>
                 <a href="/signup" id="btUsuario" th:href="@{http://localhost:9090/usuario/listarUsuarios}"
                    class="btn btn-large btn-success">LISTAR USUARIOS</a>
             </p>
@@ -64,10 +69,7 @@
                    class="btn btn-large btn-success">LISTAR EVENTOS</a>
             </p>
 
-            <p>
-                <a href="/signup" id="btCriarConta" th:href="@{http://localhost:9090/usuario/criarConta}"
-                   class="btn btn-large btn-success">CRIAR CONTA</a>
-            </p>
+
 
         </div>
     </div>
