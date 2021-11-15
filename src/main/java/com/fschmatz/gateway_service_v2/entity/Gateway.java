@@ -20,6 +20,6 @@ public class Gateway{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id_log;
-    private String text;
+    private String log;
 
 }

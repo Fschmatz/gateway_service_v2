@@ -13,6 +13,13 @@ spring:
           uri: http://localhost:9092/
           predicates:
             - Path=/evento/**
+  jpa:
+    database: postgresql
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/taskfinal_v2
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSWD:baal}
 
 #              #database config
 #              spring.jpa.database=${DATABASE_DB:POSTGRESQL}
