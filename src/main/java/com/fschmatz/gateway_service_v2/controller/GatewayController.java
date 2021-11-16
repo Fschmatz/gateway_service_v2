@@ -3,6 +3,10 @@ package com.fschmatz.gateway_service_v2.controller;
 import com.fschmatz.gateway_service_v2.entity.Gateway;
 import com.fschmatz.gateway_service_v2.repository.GatewayRepository;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -14,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+@Slf4j
 @Controller
 @AllArgsConstructor
 //@RequestMapping("/gateway")
@@ -32,6 +36,11 @@ public class GatewayController {
         return "error";
     }
 
+    public void saveLogs(String logtext){
+        Gateway gatewaylog = new Gateway();
+        gatewaylog.setLog(logtext);
+        gatewaylog.toString();
+    }
 
 
     @GetMapping("/logs")

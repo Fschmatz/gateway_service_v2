@@ -22,4 +22,15 @@ public class Gateway{
     private Integer id_log;
     private String log;
 
+    public void setLog(String log) {
+        this.log = log;
+    }
+
+    @Override
+    public String toString() {
+        return "Gateway{" +
+                "id_log=" + id_log +
+                ", log='" + log + '\'' +
+                '}';
+    }
 }
