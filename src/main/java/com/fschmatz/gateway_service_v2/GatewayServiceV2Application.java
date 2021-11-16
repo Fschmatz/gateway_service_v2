@@ -13,17 +13,4 @@ public class GatewayServiceV2Application {
 		SpringApplication.run(GatewayServiceV2Application.class, args);
 	}
 
-	/*@Bean
-	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-		return builder.routes()
-				.route( p -> p
-						.path("/get")
-						.uri("https://www.google.com/search?q="))
-				.route( p -> p
-						.path("/homeTeste")
-
-						.uri("localhost:9090//"))
-				.build();
-	}*/
-
 }
