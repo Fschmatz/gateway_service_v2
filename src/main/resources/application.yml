@@ -2,6 +2,10 @@ server:
   port: 9090
 
 spring:
+  security:
+    user:
+      name: eu
+      password: eu
   cloud:
     gateway:
       routes:
@@ -20,6 +24,12 @@ spring:
     url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/taskfinal_v2
     username: ${DATABASE_USER:postgres}
     password: ${DATABASE_PASSWD:baal}
+
+
+
+    #senha override
+    #spring.security.user.name=eu
+    #spring.security.user.password=eu
 
 #              #database config
 #              spring.jpa.database=${DATABASE_DB:POSTGRESQL}
