@@ -21,10 +21,14 @@ import java.util.Optional;
 @Slf4j
 @Controller
 @AllArgsConstructor
-//@RequestMapping("/gateway")
 public class GatewayController {
 
     GatewayRepository repository;
+
+   /* @GetMapping("/")
+    public String login() {
+        return "login";
+    }*/
 
     @GetMapping("/")
     public String homePage() {

@@ -3,7 +3,7 @@ server:
 
 spring:
   security:
-    user:
+     user:
       name: eu
       password: eu
   cloud:
@@ -17,9 +17,13 @@ spring:
           uri: http://localhost:9092/
           predicates:
             - Path=/evento/**
+
+    discovery:
+      enabled: true
   jpa:
     database: postgresql
     show-sql: true
+
   datasource:
     url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/taskfinal_v2
     username: ${DATABASE_USER:postgres}
@@ -30,7 +34,9 @@ spring:
     #senha override
     #spring.security.user.name=eu
     #spring.security.user.password=eu
-
+  main:
+    web-application-type: reactive
+    allow-bean-definition-overriding: true
 #              #database config
 #              spring.jpa.database=${DATABASE_DB:POSTGRESQL}
 #              spring.datasource.url=jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/taskfinal_v2

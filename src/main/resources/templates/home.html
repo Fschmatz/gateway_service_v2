@@ -28,13 +28,14 @@
             margin: 20px;
         }
 
-        .btn#btUsuario{
+        .btn#btUsuario {
             background-color: #3780bb;
         }
 
         .btn#btEventos {
             background-color: #e3753f;
         }
+
         .btn#btCriarConta {
             background-color: #3780bb;
         }
@@ -51,29 +52,49 @@
         <div class="btn-group button">
 
             <p>
-                <a href="/signup" th:href="@{http://localhost:9090/}" class="btn btn-large btn-success">HOME GATEWAY</a>
+                <a th:href="@{http://localhost:9090/}" class="btn btn-large btn-success">HOME GATEWAY</a>
             </p>
 
             <p>
-                <a href="/signup" th:href="@{http://localhost:9090/logs}" class="btn btn-large btn-success">LOGS GATEWAY</a>
+                <a th:href="@{http://localhost:9090/logs}" class="btn btn-large btn-success">LOGS GATEWAY</a>
             </p>
 
             <p>
-                <a href="/signup" id="btCriarConta" th:href="@{http://localhost:9090/usuario/criarConta}"
+                <a id="btCriarConta" th:href="@{http://localhost:9090/usuario/criarConta}"
                    class="btn btn-large btn-success">CRIAR CONTA</a>
             </p>
 
             <p>
-                <a href="/signup" id="btUsuario" th:href="@{http://localhost:9090/usuario/listarUsuarios}"
+                <a id="btUsuario" th:href="@{http://localhost:9090/usuario/listarUsuarios}"
                    class="btn btn-large btn-success">LISTAR USUARIOS</a>
             </p>
 
             <p>
-                <a href="/signup" id="btEventos" th:href="@{http://localhost:9090/evento/listarEventos}"
+                <a id="btEventos" th:href="@{http://localhost:9090/evento/listarEventos}"
                    class="btn btn-large btn-success">LISTAR EVENTOS</a>
             </p>
 
 
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <h1>
+        Testes Trajeto Login -> Usuario -> Eventos
+    </h1>
+    <br>
+    <div class="container-fluid">
+        <div class="btn-group button">
+
+            <p>
+                <a th:href="@{http://localhost:9090/usuario/homeUsuario/1}" class="btn btn-large btn-success">HOME
+                    USUARIO</a>
+            </p>
+
+            <p>
+                <a th:href="@{http://localhost:9090/usuario/listarUsuarios}"
+                   class="btn btn-large btn-success">LISTAR USUARIOS</a>
+            </p>
 
         </div>
     </div>
