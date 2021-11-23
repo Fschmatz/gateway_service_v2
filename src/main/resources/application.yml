@@ -17,6 +17,10 @@ spring:
           uri: http://localhost:9092/
           predicates:
             - Path=/evento/**
+        - id: login_service
+          uri: http://localhost:9093/
+          predicates:
+            - Path=/login/**
 
     discovery:
       enabled: true
