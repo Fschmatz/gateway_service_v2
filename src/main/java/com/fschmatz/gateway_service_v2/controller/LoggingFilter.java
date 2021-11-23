@@ -33,7 +33,7 @@ public class LoggingFilter implements GlobalFilter {
         URI routeUri = exchange.getAttribute(GATEWAY_REQUEST_URL_ATTR);
 
         //Terminal
-        log.info("--> SERVIÇO : " + route.getId()  + " --> URI : " + routeUri);
+        log.info("\n\n--> SERVIÇO : " + route.getId()  + " \n--> URI : " + routeUri+"\n");
         //new Gateway().setLog('1');
 
         /*new GatewayRepository repository;
